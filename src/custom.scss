@@ -39,6 +39,17 @@
 		}
 	}
 }
+@media (max-width: 560px) {
+	.custom__cart__image{
+		width: 50px;
+		height: 50px;
+	}
+	.custom__serif__bin{
+		font-size: 7px;
+	}
+
+
+}
 @media (max-width: 370px) {
 	.cart__custom {
 		margin-right: 5px !important;

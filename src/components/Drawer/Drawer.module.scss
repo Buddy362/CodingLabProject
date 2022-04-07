@@ -44,3 +44,20 @@
     margin: 0;
   }
 }
+@media (max-width:768px) {
+  .drawer{
+    width: 400px;
+  }
+}
+
+@media (max-width:560px) {
+  .drawer{
+    width: 320px;
+  }
+}
+
+@media (max-width:500px) {
+  .drawer{
+    width: 100%;
+  }
+}

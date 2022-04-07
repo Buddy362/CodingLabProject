@@ -49,10 +49,10 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
                 <div key={obj.id} className="cartItem d-flex align-center mb-20">
                   <div
                     style={{ backgroundImage: `url(${obj.imageUrl})` }}
-                    className="cartItemImg"></div>
+                    className="cartItemImg custom__cart__image"></div>
 
                   <div className="mr-20 flex">
-                    <p className="mb-5">{obj.title}</p>
+                    <p className="mb-5 custom__serif__bin">{obj.title}</p>
                     <b>{obj.price} тг.</b>
                   </div>
                   <img
