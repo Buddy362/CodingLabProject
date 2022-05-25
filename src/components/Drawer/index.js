@@ -17,7 +17,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
   const onClickOrder = async () => {
     try {
       setIsLoading(true);
-      const { data } = await axios.post('/orders/', {
+      const { data } = await axios.post('/orders', {
         items: cartItems,
       });
       setOrderId(data.id);
@@ -26,11 +26,11 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
 
       for (let i = 0; i < cartItems.length; i++) {
         const item = cartItems[i];
-        await axios.delete('/cart/' + item.id);
+        await axios.delete('/cart' + item.id);
         await delay(1000);
       }
     } catch (error) {
-      alert('Ошибка при создании заказа :(');
+      /* alert('Ошибка при создании заказа :('); */
     }
     setIsLoading(false);
   };
@@ -74,7 +74,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
                 <li>
                   <span>Налог 12%:</span>
                   <div></div>
-                  <b>{(totalPrice / 100) * 12} тг. </b>
+                  <b>{(totalPrice / 100) * 12.1} тг. </b>
                 </li>
               </ul>
               <button disabled={isLoading} onClick={onClickOrder} className="greenButton">

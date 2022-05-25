@@ -3,10 +3,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e7f6ff;
+  font-family: 'Inter', system-ui !important;
 }
 
 * {
-  font-family: 'Inter', system-ui;
+  font-family: 'Inter', system-ui !important;
 }
 
 .wrapper {

@@ -1,7 +1,8 @@
 {
-  "name": "react-sneakers",
+  "name": "Danila-Alimzhan",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://61a1ca9f6c3b400017e69da0.mockapi.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
