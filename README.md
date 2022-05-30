@@ -1,6 +1,6 @@
 # CodingLabProject
 
-Check out website by this link: coding-lab-project.vercel.app/
+Check out website by this link: https://coding-lab-project.vercel.app/
 
 Velocross Bike Store
 
